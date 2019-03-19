@@ -129,7 +129,11 @@ a:hover{
 }
 
 .innerParagraphs{
-  font-size: 18px
+  font-size: 20px;
+  text-align: center
+}
+.innerParagraphs>p{
+  margin: 10px 0
 }
 /******* Education *******/
 /* The actual timeline (the vertical ruler) */
