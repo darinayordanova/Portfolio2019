@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="src/logo.jpg" type="image/x-icon"/>
+  <title>Darina Yordanova</title>
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/navbar-fixed-right.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/navbar-fixed-left.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/docs.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.rawgit.com/mladenplavsic/bootstrap-navbar-sidebar/3bd282bd/docs/docs.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-left">
+    <div class="container navbar-cont">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class=" hideMe visible-sm-block hidden-xs visible-md-block visible-lg-block">
+          <img class="photo" src="src/prof.jpg">
+        </div>
+        <a class="navbar-brand" href="#">
+          <p>Darina Yordanova</p>
+        </a>
+
+
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#education">education</a>
+          </li>
+          <li>
+            <a href="#experience">experience</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="#contact">contact me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- content -->
+  <div class="container">
+    <!-- Up Button -->
+    <i onclick="topFunction()" id="myBtn" class="fas fa-chevron-circle-up fa-3x"></i>
+
+    <div id="container">
+      <div class="about" id="about">
+        <h1 class="sectionTitle">about</h1>
+        <div class="aboutIcons">
+          <p class="iconsAbout">
+            <i class="fas fa-phone"></i>0885699240</p>
+          <p class="iconsAbout">
+            <i class="fas fa-map-marker-alt"></i>Sofia, Bulgaria</p>
+          <p class="iconsAbout">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:d.yordanova98@gmail.com">d.yordanova98@gmail.com</a>
+          </p>
+          <p class="iconsAbout">
+            <i class="fab fa-github"></i>
+            <a target="_blank" href="https://github.com/darinayordanova">darinayordanova</a>
+          </p>
+          <p class="iconsAbout">
+            <i class="fab fa-linkedin"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/darina-yordanova/">Darina Yordanova</a>
+          </p>
+          <span class="stretch"></span>
+        </div>
+        <div class="innerParagraphs">
+          <p>Hello</p>
+          <p> My name is Darina and I'm a junior Front-end developer.</p>
+          <p>I'm passionate about web development, macine lerning and hardware, but my main specialties are HtML, CSS and JavaScript.</p>
+          <p>Currently I teach kids the magic of programming and develop my skills in order to deliver them the best I can.</p>
+        </div>
+      </div>
+      <div class="hideme" id="education">
+        <h1 class="sectionTitle">education</h1>
+        <div class="timelineEdu">
+          <div class="containerEdu leftEdu">
+            <div class="contentEdu">
+              <h4>School of matematics "Baba Tonka"- Russe</h4>
+              <p class="text-muted">
+                <small>
+                  <i class="fas fa-calendar-alt"></i>2012 — 2017</small>
+              </p>
+              <div class="timeline-body">
+                <p>I studied at informatics class and there ia learned the basics of programming. This is the place I found
+                  my passion and set the goal to be a front-end developer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="containerEdu rightEdu">
+            <div class="contentEdu">
+              <h4>Software University</h4>
+              <p class="text-muted">
+                <small>
+                  <i class="fas fa-calendar-alt"></i>2017 — Currently</small>
+              </p>
+              <div class="timeline-body">
+                <p>Here I continued to develop my code skills. By far I have successfully went through these modules:</p>
+                <ul class="coursesList">
+                  <li>Programming Basics</li>
+                  <li>Tech Module 3.0</li>
+                  <li>Front-End Development (3.1)</li>
+                  <li>JS Core</li>
+                  <li>JS Web - Currently</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hideme" id="experience">
+        <h1 class="sectionTitle">experience</h1>
+
+        <div class="wrapper_bu" style="position:relative;">
+          <a class="panel-heading accordion-toggle left" data-toggle="collapse" data-parent="#accordion1,#accordion2,#accordion3" data-target="#collapseTwo">
+            <div id="bu1">
+              <div class="title">Work Experience</div>
+            </div>
+          </a>
+          <a class="panel-heading accordion-toggle left" data-toggle="collapse" data-parent="#accordion1,#accordion2,#accordion3" data-target="#collapseOne">
+            <div id="bu2">
+              <div class="title">Soft Skills</div>
+            </div>
+          </a>
+          <a class="panel-heading accordion-toggle collapsed left " data-toggle="collapse" data-parent="#accordion1,#accordion2,#accordion3"
+            data-target="#collapseThree">
+            <div id="bu3">
+              <div class="title">Tech Skills</div>
+            </div>
+          </a>
+        </div>
+        <div class="panel-group" id="accordion1">
+          <div class="panel panel-default">
+            <div id="collapseOne" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div class="con">
+
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Team player</p>
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Self-motivated and doesn't need supevision</p>
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Good at prioritizing tasks, tracking deadlines and efficiencies</p>
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Decisive</p>
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Fast learner and curious by nature</p>
+                  <div class="softSkill"></div>
+                  <p class="softSkillText">Communicative and friendly</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div id="collapseTwo" class="panel-collapse collapse in">
+              <div class="panel-body">
+                <div class="con">
+                  <h4>SoftUni Kids</h4>
+                  <h5 class="animateLeft">Team Lead Blagoevgrad</h5>
+                  <small>Feb 2019 - Current</small>
+                  <ul>
+                    <li>
+                      <p>Providing directions and advices to our Blagoevgrad team</p>
+                    </li>
+                    <li>
+                      <p>Managing substitute trainers</p>
+                    </li>
+                  </ul>
+                  <h5 class="animateLeft">Main Trainer</h5>
+                  <small>June 2018 - Current</small>
+                  <ul>
+                    <li>
+                      <p>Creating materials for new courses</p>
+                    </li>
+                    <li>
+                      <p>Training new trainers</p>
+                    </li>
+                    <li>
+                      <p>Managing the technical materials</p>
+                    </li>
+                  </ul>
+                  <h5 class="animateLeft">Trainer</h5>
+                  <small>October 2017 - Current</small>
+                  <ul>
+                    <li>
+                      <p>Teaching kids programming</p>
+                    </li>
+                    <li>
+                      <p>Giving feedback about materials</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+                <div>
+                  <ul id="skill">
+                    <li>
+                      <span class="bar html"></span>
+                      <h3>HTML</h3>
+                    </li>
+                    <li>
+                      <span class="bar css"></span>
+                      <h3>CSS</h3>
+                    </li>
+                    <li>
+                      <span class="bar js"></span>
+                      <h3>JavaScript</h3>
+                    </li>
+                    <li>
+                      <span class="bar jquery"></span>
+                      <h3>jQuery</h3>
+                    </li>
+                    <li>
+                      <span class="bar bootstrap"></span>
+                      <h3>Bootstrap</h3>
+                    </li>
+                    <li>
+                      <span class="bar react"></span>
+                      <h3>React</h3>
+                    </li>
+                    <!-- <li><span class="bar angular"></span><h3>Angular</h3></li> -->
+                    <li>
+                      <span class="bar c"></span>
+                      <h3>C#</h3>
+                    </li>
+                    <li>
+                      <span class="bar photoshop"></span>
+                      <h3>Photoshop</h3>
+                    </li>
+                    <li>
+                      <span class="bar illustrator"></span>
+                      <h3>Illustrator</h3>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="hideme" id="projects">
+        <h1 class="sectionTitle">projects</h1>
+        <section>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="text-center">
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="inner-content">
+                        <h4 class="centered">SoftUni Kids DataBase</h4>
+                        <div class="row img-text col-xs-10 col-xs-offset-1">
+                          <img class="animatedGif col-xs-12 col-md-6 " src="src/KidsDB.gif">
+                          <div class="info col-xs-12 col-md-6">
+                            <p class="infoProj">This is my most reacent project for the ReactJS course. I got inspired by SoftUni Kids's website
+                              and made a database where teachers can share information about the courses.</p>
+                            <div class="links">
+                              <a target="_blank" href="https://github.com/darinayordanova/Kids-database-with-react" class="projGithub">GitHub Repo</a>
+                              <!-- <a href="#" class="projWebsite">Website</a> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inner-content">
+                        <h4 class="centered">Star Wars Team Project</h4>
+                        <div class="row img-text col-xs-10 col-xs-offset-1">
+                          <img class="animatedGif col-xs-12 col-md-6 " src="src/SterWars.gif">
+
+                          <div class="info col-xs-12 col-md-6">
+                            <p class="infoProj">A team project for the course JavaScript for Front-end. I was responsible for the web design and I wrote a big part of the CSS. </p>
+                            <div class="links">
+                              <a target="_blank" href="https://github.com/PChoeva/Team-Project-Star-Wars" class="projGithub">GitHub Repo</a>
+                              <a target="_blank" href="http://starwars.pamicom.net/" class="projWebsite">Website</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inner-content">
+                        <h4 class="centered">Pernik Landing Page</h4>
+                        <div class="row img-text col-xs-10 col-xs-offset-1">
+                          <img class="animatedGif col-xs-12 col-md-6 " src="src/Pernik.gif">
+                          <div class="info col-xs-12 col-md-6">
+                            <p class="infoProj">That was a teamwork project fot the HTML and CSS course at SoftUni. It's the first bigger task I've worked on using HTML, CSS and Bootstrap.</p>
+                            <div class="links">
+                              <a target="_blank" href="https://github.com/darinayordanova/Web-Fundamentals---HTML5---Teamwork-Project"
+                                class="projGithub">GitHub Repo</a>
+                              <a target="_blank" href="https://darinayordanova.github.io/Web-Fundamentals---HTML5---Teamwork-Project/" class="projWebsite">Website</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="inner-content">
+                        <h4 class="centered">Find more at my GitHub</h4>
+                        <div class="row img-text col-xs-10 col-xs-offset-1">
+                          <img class="animatedGif col-xs-12 col-md-6 " src="src/GitHub.png">
+                          <div class="info col-xs-12 col-md-6">
+                            <p class="infoProj">You can find more projects, course exercises, exam solutions and SoftUni Kids side projects at my GitHub account.</p>
+                            <div class="links">
+                              <a target="_blank" href="https://github.com/darinayordanova" class="projGithub">GitHub Account</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel" data-slide-to="1"></li>
+                      <li data-target="#carousel" data-slide-to="2"></li>
+                      <li data-target="#carousel" data-slide-to="3"></li>
+
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+        </section>
+
+        </div>
+        <div class="hideme" id="contact">
+          <h1 class="sectionTitle">contact me</h1>
+          <div class="col-md-12 col-lg-6 contactIcons">
+            <p class="iconsContact">
+              <i class="fas fa-phone"></i>0885699240</p>
+            <p class="iconsContact">
+              <i class="fas fa-map-marker-alt"></i>Sofia, Bulgaria</p>
+            <p class="iconsContact">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:d.yordanova98@gmail.com">d.yordanova98@gmail.com</a>
+            </p>
+            <p class="iconsContact">
+              <i class="fab fa-github"></i>
+              <a target="_blank" href="https://github.com/darinayordanova">darinayordanova</a>
+            </p>
+            <p class="iconsContact">
+              <i class="fab fa-linkedin"></i>
+              <a target="_blank" href="https://www.linkedin.com/in/darina-yordanova/">Darina Yordanova</a>
+            </p>
+            <span class="stretch"></span>
+          </div>
+          
+          <form class="shake col-md-12 col-lg-6" role="form" id="contactForm">
+            <div class="form-group label-floating">
+              <label class="control-label" for="name" required data-error="Please enter your name">Name</label>
+              <input type="text" name="name" id="name">
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label" for="company" required data-error="Please enter your company">Company</label>
+              <input type="text" name="company" id="company">
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label" for="email">Email Address</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label" for="phone" required data-error="Please enter your phone number">Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label" for="message" required data-error="Please enter your message">Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </div>
+            <div class="form-submit mt-5">
+              <button type="submit" class="formButton">Submit</button>
+            </div>
+            <div id="messages" class="hide" role="alert">
+              <div id="messages_content"></div>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <script src="contact.js"></script>
+  <script src="animations.js"></script>
+</body>
+
+</html>
