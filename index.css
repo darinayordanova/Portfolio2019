@@ -549,19 +549,27 @@ h5{
 }
 .softSkillText{
   font-size: 18px;
-  margin: 10px 0;
   width: 100%;
-  padding: 3px;
+  padding: 0 3px;
   color: white;
 }
 .softSkill{  
+  position:relative;
   width: 100%;
+  height:30px;
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
   background-color: #FFCBC7;
 	-moz-animation:animateLeft 2s ease-out;
 	-webkit-animation:animateLeft 2s ease-out;
 }
+.inner{
+  position:absolute;
+  height:30px;
+  
+  width: 100%;
+}
+
 @media screen and (max-width: 490px) {
   .softSkillText{
   background-color: #FFCBC7
